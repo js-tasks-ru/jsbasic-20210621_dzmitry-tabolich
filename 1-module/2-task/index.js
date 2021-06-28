@@ -11,7 +11,7 @@ function print(text) {
  */
 function isValid(name) {
   if (name) {
-    return ((name.indexOf(' ') < 0) && (name.length >= 4));
+    return ((name.includes(' ') < 0) && (name.length >= 4));
   } return false;
 }
 

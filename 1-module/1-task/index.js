@@ -1,12 +1,13 @@
 function factorial(n) {
   let result = 1;
-  while (n) {
-    if (n === 0 || n === 1) {
-      break;
-    }
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  else
+  {while (n) {
     result = result * n;
     n = n - 1;
-  }
+  }}
   return result;
 }
 
