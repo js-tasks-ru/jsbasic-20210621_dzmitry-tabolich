@@ -1,14 +1,9 @@
 function factorial(n) {
-  let result = 1;
-  if (n === 0 || n === 1) {
-    return 1;
-  }
-  else
-  {while (n) {
-    result = result * n;
-    n = n - 1;
-  }}
-  return result;
+  let total = 1;
+
+  for (i = 0; i < n; i++){
+    total = total * (n - i);
+  } return total;
 }
 
 
